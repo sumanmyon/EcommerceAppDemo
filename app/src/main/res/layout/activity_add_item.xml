@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin.AddItemActivity"
+    android:background="@color/colorPrimaryDark">
+    <!--android:background="@drawable/background">-->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_margin="10dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Item you want to sell."
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:layout_gravity="center"/>
+
+            <EditText
+                android:layout_marginTop="6dp"
+                android:padding="8dp"
+                android:hint="Product Name"
+                android:background="@drawable/login_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:id="@+id/add_item_product_name"
+                android:focusable="true"/>
+            <EditText
+                android:layout_marginTop="6dp"
+                android:padding="8dp"
+                android:hint="No. of stock"
+                android:background="@drawable/login_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:id="@+id/add_item_no_of_stock"
+                android:focusable="true"/>
+            <EditText
+                android:layout_marginTop="6dp"
+                android:padding="8dp"
+                android:hint="Price"
+                android:background="@drawable/login_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:id="@+id/add_item_price"
+                android:focusable="true"
+                android:inputType="numberDecimal"/>
+            <EditText
+                android:layout_marginTop="6dp"
+                android:padding="8dp"
+                android:hint="Phone Number"
+                android:background="@drawable/login_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:id="@+id/add_item_phone_number"
+                android:focusable="true"
+                android:inputType="phone"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:layout_marginTop="6dp"
+                android:padding="8dp"
+                android:src="@drawable/images2"
+                android:scaleType="fitCenter"
+                android:adjustViewBounds="true"
+                android:id="@+id/add_item_imageView"/>
+
+            <EditText
+                android:layout_marginTop="6dp"
+                android:padding="8dp"
+                android:hint="Description"
+                android:background="@drawable/login_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:id="@+id/add_item_description"
+                android:focusable="true"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginTop="6dp"
+                android:padding="8dp">
+                <TextView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.9"
+                    android:textSize="16dp"
+                    android:textColor="@color/black"
+                    android:text="Add your location"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/login_bg"
+                    android:id="@+id/add_item_location_textView"/>
+
+                <ImageView
+                    android:id="@+id/add_location_imageView"
+                    android:layout_width="30dp"
+                    android:layout_height="19dp"
+                    android:layout_gravity="end|center"
+                    android:layout_weight="0.1"
+                    android:src="@drawable/baseline_add_location_black_18dp" />
+            </LinearLayout>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_bg"
+                android:text="Add Item/Product"
+                android:layout_marginTop="8dp"
+                android:id="@+id/add_item_add_button"
+                android:layout_gravity="center"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

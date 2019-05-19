@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">EcommerceAppDemo</string>
+
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+
+    <string name="google_maps_key">AIzaSyBTY_K8YqJNNtKE84UghMIRdjh7cE0GjvQ</string>
+    <!--<string name="google_maps_key">AIzaSyDeP1TA7s3S0ZAhRU0nTmn4RMREAr3OIt4</string>-->
+
+</resources>

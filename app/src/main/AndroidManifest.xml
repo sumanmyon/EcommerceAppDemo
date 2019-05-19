@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="www.sumanmyon.com.ecommerceappdemo">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".UserPaurse.PaurseProduct"></activity>
+        <activity android:name=".GoogleMap.ShowGoogleMap" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="www.sumanmyon.com.ecommerceappdemo.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".Admin.EditActivity"
+            android:parentActivityName=".Admin.DashboardActivity" />
+        <activity
+            android:name=".Admin.DashboardActivity"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Admin.AddItemActivity"
+            android:parentActivityName=".Admin.DashboardActivity" />
+        <activity
+            android:name=".LoginAndRegister.RegisterActivity"
+            android:theme="@style/AppTheme_NoActionBar" />
+        <activity
+            android:name=".LoginAndRegister.LoginActivity"
+            android:theme="@style/AppTheme_NoActionBar" />
+        <activity
+            android:name=".RecommendationAndFeedBack.FeedBack"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/AppTheme_NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
